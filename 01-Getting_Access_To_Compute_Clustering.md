@@ -1,4 +1,4 @@
-# Introduction to Compute Clustering
+# Getting Access to Compute Clustering
 
 From Wikipedia:
 "A computer cluster is a set of loosely or tightly connected computers that work together so that, in many respects, they can be viewed as a single system. Unlike grid computers, computer clusters have each node set to perform the same task, controlled and scheduled by software."
