@@ -2,7 +2,7 @@
 Started with help from https://www.tipsandtricks-hq.com/basic-unix-commands-list-366 
 
 ## File/Directory operation related Unix Commands
-cp – copy a file
+cp – copy a file <br>
 mv – move or rename files or directories
 tar – create and use archives of files
 gzip – compress a file
