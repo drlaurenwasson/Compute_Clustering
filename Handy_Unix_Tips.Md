@@ -1,12 +1,20 @@
 # Helpful unix commands
 Started with help from https://www.tipsandtricks-hq.com/basic-unix-commands-list-366 
+# THERE IS NO EASY WAY TO UNDO (like control Z), so please double check your work when you use these commands!
 
 ## File/Directory operation related Unix Commands
 <b>cp</b> – copy a file. <br>
 The example below copies the file "file.txt" from the directory /proj/ to /proj/lkw <br>
-```> cp file.txt /proj/ /proj/lkw```
+```> cp file.txt /proj/ proj/lkw```
 <br>
-mv – move or rename files or directories
+<b>mv</b> – move or rename files or directories. <br>
+The example below moves the file "file.txt" from the directory /proj/ to /proj/lkw <br>
+```> mv file.txt /proj/ /proj/lkw``` <br>
+The example below renames the file "file.txt" to "newfile.txt"
+```> mv file.txt file2.txt```
+
+
+
 tar – create and use archives of files
 gzip – compress a file
 ftp – file transfer program
