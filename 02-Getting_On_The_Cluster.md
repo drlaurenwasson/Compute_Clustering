@@ -4,9 +4,10 @@ What is a terminal? Terminal is basically a text based version of a file folder 
 
 For UNC's longleaf cluster, you have to be on Carolina's vpn to log into the cluster.
 
-## For Mac
-Macs are easy. Just open up a new Terminal.
-```
-ssh <onyen>@longleaf.unc.edu
-```
-Enter your password
+
+Follow the instructions here to get onto UNC's cluster.
+https://its.unc.edu/research-computing/techdocs/getting-started-on-longleaf/#Logging%20In
+
+For windows, the downloadable program to simulate Terminal that I use is called Git Bash. 
+https://gitforwindows.org/
+
