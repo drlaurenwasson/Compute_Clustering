@@ -47,14 +47,15 @@ The example below will change directories to /proj/users/lkw <br>
 ```> pwd```
 <br><br>
 
-<b>ls</b> – list names of files in a directory. The command ls -l will give you more information than just ls
+<b>ls</b> – list names of files in a directory. The command ls -l will give you more information than just ls <br>
 ```> ls -l ```
 <br><br>
 
 ## Display file content
-cat – concatenate and display files.
-more – The more utility is a filter that displays the contents of a text file on the terminal, one screenful at a time.
-less – Less is a program similar to  more  (1), but  which  allows backward  movement  in the file as well as forward movement. Also, less does not have  to  read  the  entire  input  file before starting,so with large input files it starts up faster than text editors like vi
-File Editing
-vi – The vi (visual) utility is a display-oriented text editor.
-nano – nano is a small, free and friendly editor.
+<b>cat</b> – concatenate and display files. <br>
+<b>more</b> – The more utility is a filter that displays the contents of a text file on the terminal, one screenful at a time. <br>
+<b>less</b> – Less is a program similar to  more  (1), but  which  allows backward  movement  in the file as well as forward movement. Also, less does not have  to  read  the  entire  input  file before starting,so with large input files it starts up faster than text editors like vi <br>
+<br><br>
+
+## File Editing
+nano – nano is a small, free and friendly editor. More information can be found here https://www.howtogeek.com/howto/42980/the-beginners-guide-to-nano-the-linux-command-line-text-editor/
