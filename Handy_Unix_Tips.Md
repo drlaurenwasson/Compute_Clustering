@@ -20,7 +20,13 @@ The example below renames the file "file.txt" to "newfile.txt" <br>
 
 <b>gzip</b> – compress a file. <br>
 
-mkdir – make a directory
+<b>mkdir</b> – make a directory. <br>
+The example below will make a directory/folder called "lkw" in the folder /proj/users
+```> mkdir /proj/users/lkw```
+<br> If you are already in the /proj/users directory, all you need to do is: <br>
+```mkdir lkw```
+<br><br>
+
 rm – remove files or directories
 rmdir – remove a directory
 mount – attaches a file system to the file system hierarchy at the mount_point, which is the pathname of a directory.
