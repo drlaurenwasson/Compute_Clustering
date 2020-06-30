@@ -6,19 +6,20 @@ Started with help from https://www.tipsandtricks-hq.com/basic-unix-commands-list
 <b>cp</b> – copy a file. <br>
 The example below copies the file "file.txt" from the directory /proj/ to /proj/lkw <br>
 ```> cp file.txt /proj/ proj/lkw```
-<br>
+<br><br>
+ 
 <b>mv</b> – move or rename files or directories. <br>
 The example below moves the file "file.txt" from the directory /proj/ to /proj/lkw <br>
-```> mv file.txt /proj/ /proj/lkw``` <br>
-The example below renames the file "file.txt" to "newfile.txt"
+```> mv file.txt /proj/ /proj/lkw``` 
+<br>
+The example below renames the file "file.txt" to "newfile.txt" <br>
 ```> mv file.txt file2.txt```
+<br><br>
 
+<b>tar</b> – create and use archives of files. <br>
 
+<b>gzip</b> – compress a file. <br>
 
-tar – create and use archives of files
-gzip – compress a file
-ftp – file transfer program
-lpr – print out a file
 mkdir – make a directory
 rm – remove files or directories
 rmdir – remove a directory
