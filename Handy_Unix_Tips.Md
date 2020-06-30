@@ -28,7 +28,7 @@ The example below will make a directory/folder called "lkw" in the folder /proj/
 <br><br>
 
 <b>rm</b> – remove files or directories. <br>
-<b>rmdir</b> – remove a directory <br)
+<b>rmdir</b> – remove a directory <br>
 I dont recommend these for new users. Instead, make a directory called "trash" and move your bad files/directories into there. <br>
 ```
 > mkdir trash
