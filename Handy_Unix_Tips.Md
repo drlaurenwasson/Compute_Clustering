@@ -21,17 +21,22 @@ The example below renames the file "file.txt" to "newfile.txt" <br>
 <b>gzip</b> – compress a file. <br>
 
 <b>mkdir</b> – make a directory. <br>
-The example below will make a directory/folder called "lkw" in the folder /proj/users
+The example below will make a directory/folder called "lkw" in the folder /proj/users <br>
 ```> mkdir /proj/users/lkw```
 <br> If you are already in the /proj/users directory, all you need to do is: <br>
-```mkdir lkw```
+```> mkdir lkw```
 <br><br>
 
-rm – remove files or directories
-rmdir – remove a directory
-mount – attaches a file system to the file system hierarchy at the mount_point, which is the pathname of a directory.
-umount – unmounts a currently mounted file system.
-Navigational type Unix Commands
+<b>rm</b> – remove files or directories. <br>
+<b>rmdir</b> – remove a directory <br)
+I dont recommend these for new users. Instead, make a directory called "trash" and move your bad files/directories into there. <br>
+```
+> mkdir trash
+> mv badfile.txt baddirectory trash
+```
+<br><br>
+
+## Navigational type Unix Commands
 cd – change directory
 pwd – display the name of your current directory
 ls – list names of files in a directory
