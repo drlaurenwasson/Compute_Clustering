@@ -34,7 +34,9 @@ I dont recommend these for new users. Instead, make a directory called "trash" a
 > mkdir trash
 > mv badfile.txt baddirectory trash
 ```
-<br>
+
+<br><br>
+
 ## Navigational type Unix Commands
 <b>cd</b>– change directory. <br>
 The example below will change directories to /proj/users/lkw <br>
