@@ -34,16 +34,22 @@ I dont recommend these for new users. Instead, make a directory called "trash" a
 > mkdir trash
 > mv badfile.txt baddirectory trash
 ```
+<br>
+## Navigational type Unix Commands
+<b>cd</b>– change directory. <br>
+The example below will change directories to /proj/users/lkw <br>
+```> cd /proj/users/lkw```
 <br><br>
 
-## Navigational type Unix Commands
-cd – change directory
-pwd – display the name of your current directory
-ls – list names of files in a directory
-Disk, File and Folder Size/Usage
-du – Use this command to see the size/usage of the folder you are in. Example usage: du -sk *
-df – Report file system disk space usage. Example usage: df -k
-Display file content
+<b>pwd</b> – display the name of your current directory. <br>
+```> pwd```
+<br><br>
+
+<b>ls</b> – list names of files in a directory. The command ls -l will give you more information than just ls
+```> ls -l ```
+<br><br>
+
+## Display file content
 cat – concatenate and display files.
 more – The more utility is a filter that displays the contents of a text file on the terminal, one screenful at a time.
 less – Less is a program similar to  more  (1), but  which  allows backward  movement  in the file as well as forward movement. Also, less does not have  to  read  the  entire  input  file before starting,so with large input files it starts up faster than text editors like vi
