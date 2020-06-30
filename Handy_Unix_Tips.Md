@@ -2,9 +2,10 @@
 Started with help from https://www.tipsandtricks-hq.com/basic-unix-commands-list-366 
 
 ## File/Directory operation related Unix Commands
-cp – copy a file. 
+<b>cp</b> – copy a file. <br>
 The example below copies the file "file.txt" from the directory /proj/ to /proj/lkw <br>
 ```> cp file.txt /proj/ /proj/lkw```
+<br>
 mv – move or rename files or directories
 tar – create and use archives of files
 gzip – compress a file
