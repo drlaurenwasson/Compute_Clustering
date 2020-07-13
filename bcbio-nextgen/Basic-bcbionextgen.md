@@ -28,4 +28,10 @@ export PATH=/proj/conlonlb/bcbio/anaconda/bin:/proj/conlonlb/bcbio/tools/bin:$PA
 ```
 You will need to do this EVERY TIME you log into the cluster to run this script, because once you log off the cluster, your PATH will reset to its default parameter. 
 
-# RNA-seq
+## Step 3: Set up your analysis
+### Bulk RNA-seq
+Bc-bio can perform multiple kinds of analysis. Let's look at bulk-RNA-seq:
+
+To run bulk RNA-seq you need to create two files:
+1) A .csv file that contains metadata information for your samples. I have linked an example here
+
