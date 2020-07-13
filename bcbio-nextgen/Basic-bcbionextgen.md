@@ -38,7 +38,8 @@ To run bulk RNA-seq you need to create two files:
 I use a free text-editor for all of my coding. I believe the newest version is called BBEdit
 CSV stands for comma separated value, so your file should look like this:
 
-```samplename,description,sex,genome,user
+```
+samplename,description,sex,genome,user
 X-Trop-1_R1_001.fastq.gz,xtrop-1,male,XenTro10,Kerry
 X-Trop-1_R2_001.fastq.gz,xtrop-1,male,XenTro10,Kerry
 ```
