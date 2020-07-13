@@ -48,7 +48,7 @@ The first line will always have samplename and description as its first two para
 
 For more information about making a textfile in the cluster, see my page [HERE.](https://github.com/drlaurenwasson/Compute_Clustering/blob/master/04-Making%20text%20files%20via%20command%20line.md)
 
-2. a template, with the extension .yaml. I have linked an example [HERE.](https://github.com/drlaurenwasson/Compute_Clustering/blob/master/bcbio-nextgen/xtrop_xen10_test_submission-template.yaml)
+2. a template, named something like submission-template.yaml. I have linked an example [HERE.](https://github.com/drlaurenwasson/Compute_Clustering/blob/master/bcbio-nextgen/xtrop_xen10_test_submission-template.yaml)
 
 ```
 # Template for xenopus RNA-seq using Illumina prepared samples
@@ -84,5 +84,12 @@ bcbio_nextgen.py -w template xtrop_xen10_test_submission-template.yaml xtrop_xen
 Here it is saying, "All the files in the folder /proj/conlonlb/users/wasson/fastq/ that END in "fastq.gz"". So it can be a path to the fastq files or the actual fastq files in the folder. 
 
 ## Step 4: Check the setup is correct
+The previous command will set up a folder with the same name as what you named the csv file. Change directories into that folder. You will now see two folders: config and work.
+Change into the config folder. You will see your original csv and submission template yaml file, but there will also be another yaml file. This is the file that bcbionextgen will use to run the analysis.
 
+```
+less xtrop_xen10_test_submission.yaml
+```
+
+You can see that bcbio has used the csv and the template we provided to make this file. But, sometimes it does a bad job with this if your fastq files are not ending like R1.fast.gz and R2.fastq.gz. You might have to manually edit this file so that R1 and R2 are paired (I had to do this with files that ended in R1_001.fastq.gz and R2_001.fastq.gz). View the fixed example [HERE.](https://github.com/drlaurenwasson/Compute_Clustering/blob/master/bcbio-nextgen/xtrop_xen10_test_submission.yaml)
 
