@@ -33,5 +33,5 @@ You will need to do this EVERY TIME you log into the cluster to run this script,
 Bc-bio can perform multiple kinds of analysis. Let's look at bulk-RNA-seq:
 
 To run bulk RNA-seq you need to create two files:
-1) A .csv file that contains metadata information for your samples. I have linked an example here
+1) A .csv file that contains metadata information for your samples. I have linked an example [HERE](drlaurenwasson/Compute_Clustering/bcbio-nextgen/xtrop_xen10_test_submission.csv)
 
