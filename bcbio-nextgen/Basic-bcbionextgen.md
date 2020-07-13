@@ -137,3 +137,22 @@ bcbio_nextgen.py ../config/xtrop_xen10_test_submission.yaml -n 20
 ```
 
 Here, we are running the bcbio_nextgen.py script using the YAML file that was just created. This should submit your job to the cluster. 
+
+# Bcbio-nextgen output
+Once your job is finished, you should see a new folder called "final". If you look in that directory, you will see individual folders for each sample, and one folder with a different name (this is the combined folder). If you look in the folder for each sample, there will be directories called "qc", "salmon", and "star", and then bam files. 
+
+the "qc" folder contains the quality control metrics for each tool that was run in the pipeline. Heres an example of other files that are in the folder (in this example, the sample is called "S1"
+```
+S1
+├── S1-ready.bam -- coordinate-sorted whole genome alignments
+├── S1-ready.counts -- featureCounts counts
+├── S1-transcriptome.bam -- alignments to the transcriptome
+├── salmon
+│   ├── abundance.h5 -- h5 object, usable with sleuth
+│   └── quant.sf -- salmon quantifications, usable with tximport
+└── STAR
+    ├── S1-SJ.bed -- STAR junction file in BED format
+    └── S1-SJ.tab -- STAR junction file in tabular format
+```
+
+The combined folder contains all of the same information but for all sample. For DESEQ2, the file we want was aligned with STAR and counted/annotated using FeatureCounts. This file is found in the combinedfolder/featureCounts/ and is called annotated_combined.counts. Download this file to import into DESEQ (vignette found [HERE.](https://github.com/drlaurenwasson/R_tutorials/blob/master/DESeq2/DESeq2_vignette.md)
