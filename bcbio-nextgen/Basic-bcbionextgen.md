@@ -68,4 +68,21 @@ I have installed genome_builds hg38, XenTro9, XenTro10, and mm10. I have install
 
 STAR is my preferred aligner for RNA_seq data. trim_reads is a parameter where you run Trimmomatic to trim the ends off of reads. I assume that the ends are trimmed when we receive samples from the HTSF, so here I have set it to FALSE. 
 
+#### Finish set up
+After you establish your PATH, the first command you will run is: 
+
+```bcbio_nextgen.py -w template <<template.yaml>> <<csv.csv>> <<ALL THE FASTQ files>>```
+As an example: 
+```
+bcbio_nextgen.py -w template xtrop_xen10_test_submission-template.yaml xtrop_xen10_test_submission.csv *.fastq.gz
+```
+The ```*.fastq.gz``` command at the end is saying "All files in this folder that END in fastq.gz". So the fastq files need to be in the same folder where you are running this command. Or, you can do it like this 
+
+```
+bcbio_nextgen.py -w template xtrop_xen10_test_submission-template.yaml xtrop_xen10_test_submission.csv /proj/conlonlb/users/wasson/fastq/*fastq.gz
+```
+Here it is saying, "All the files in the folder /proj/conlonlb/users/wasson/fastq/ that END in "fastq.gz"". So it can be a path to the fastq files or the actual fastq files in the folder. 
+
+## Step 4: Check the setup is correct
+
 
