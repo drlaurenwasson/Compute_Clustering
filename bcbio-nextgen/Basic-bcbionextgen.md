@@ -11,14 +11,21 @@ However, bcbio-nextgen is not installed on the Longleaf cluster as a module. The
 
 A PATH is an environment variable on Unix-like operating systems that specifies a set of directories where executable programs are located. In general, each executing process or user session has its own PATH setting. If you do not set your path to the right location and try to run bcbio-nextgen, the commands will fail because it will say that the scripts are not installed. 
 
-## Step 1: Log into the cluster
+## Step 1: Log into the cluster and navagate to your working directory
 ```
 ssh onyen@longleaf.unc.edu
 ```
 enter your password
+<br>
 Change directories to where you want to run your script
 ```
 cd /proj/conlonlb/users/YOURFOLDER
 ```
+## Step 2: Set your PATH
+The PATH is where I installed the tools you will need to run. So, type
+```
+export PATH=/proj/conlonlb/bcbio/anaconda/bin:/proj/conlonlb/bcbio/tools/bin:$PATH
+```
+You will need to do this EVERY TIME you log into the cluster to run this script, because once you log off the cluster, your PATH will reset to its default parameter. 
 
-RNA-seq
+# RNA-seq
