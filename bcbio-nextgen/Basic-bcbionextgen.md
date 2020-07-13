@@ -33,15 +33,16 @@ You will need to do this EVERY TIME you log into the cluster to run this script,
 Bc-bio can perform multiple kinds of analysis. Let's look at bulk-RNA-seq:
 
 To run bulk RNA-seq you need to create two files:
-1) A .csv file that contains metadata information for your samples. I have linked an example [HERE](https://github.com/drlaurenwasson/Compute_Clustering/blob/master/bcbio-nextgen/xtrop_xen10_test_submission.csv)
+1) A .csv file that contains metadata information for your samples. I have linked an example [HERE.](https://github.com/drlaurenwasson/Compute_Clustering/blob/master/bcbio-nextgen/xtrop_xen10_test_submission.csv)
 
 I use a free text-editor for all of my coding. I believe the newest version is called BBEdit
 CSV stands for comma separated value, so your file should look like this:
 
-samplename,description,sex,genome,user
+```samplename,description,sex,genome,user
 X-Trop-1_R1_001.fastq.gz,xtrop-1,male,XenTro10,Kerry
 X-Trop-1_R2_001.fastq.gz,xtrop-1,male,XenTro10,Kerry
+```
 
 The first line will always have samplename and description as its first two parameters, and then after that you can decide what parameters to add. Here, I added sex (the study was comparing male versus female), the genome I want to align to, and who I am doing the analysis for. Other things you can add includ genotype, cellline, mutation, gene, timepoint, drug dose. Whatever.
 
-For more information about making a textfile in the cluster, see my page [HERE](https://github.com/drlaurenwasson/Compute_Clustering/blob/master/04-Making%20text%20files%20via%20command%20line.md)
+For more information about making a textfile in the cluster, see my page [HERE.](https://github.com/drlaurenwasson/Compute_Clustering/blob/master/04-Making%20text%20files%20via%20command%20line.md)
