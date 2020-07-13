@@ -1,0 +1,116 @@
+details:
+- algorithm:
+    aligner: star
+    quality_format: standard
+    trim_reads: false
+  analysis: RNA-seq
+  description: xtrop-1
+  files:
+  - /proj/conlonlb/users/wasson/X-Trop-1_R1_001.fastq.gz
+  - /proj/conlonlb/users/wasson/X-Trop-1_R2_001.fastq.gz
+  genome_build: XenTro10
+  metadata:
+    gene: xtrop-1
+    genome: XenTro10
+    user: Kerry
+- algorithm:
+    aligner: star
+    quality_format: standard
+    trim_reads: false
+  analysis: RNA-seq
+  description: xtrop-2
+  files:
+  - /proj/conlonlb/users/wasson/X-Trop-2_R1_001.fastq.gz
+  - /proj/conlonlb/users/wasson/X-Trop-2_R2_001.fastq.gz
+  genome_build: XenTro10
+  metadata:
+    gene: xtrop-2
+    genome: XenTro10
+    user: Kerry
+- algorithm:
+    aligner: star
+    quality_format: standard
+    trim_reads: false
+  analysis: RNA-seq
+  description: xtrop-3
+  files:
+  - /proj/conlonlb/users/wasson/X-Trop-3_R1_001.fastq.gz
+  - /proj/conlonlb/users/wasson/X-Trop-3_R2_001.fastq.gz
+  genome_build: XenTro10
+  metadata:
+    gene: xtrop-3
+    genome: XenTro10
+    user: Kerry
+- algorithm:
+    aligner: star
+    quality_format: standard
+    trim_reads: false
+  analysis: RNA-seq
+  description: xtrop-4
+  files:
+  - /proj/conlonlb/users/wasson/X-Trop-4_R1_001.fastq.gz
+  - /proj/conlonlb/users/wasson/X-Trop-4_R2_001.fastq.gz
+  genome_build: XenTro10
+  metadata:
+    gene: xtrop-4
+    genome: XenTro10
+    user: Kerry
+- algorithm:
+    aligner: star
+    quality_format: standard
+    trim_reads: false
+  analysis: RNA-seq
+  description: xtrop-5
+  files:
+  - /proj/conlonlb/users/wasson/X-Trop-5_R1_001.fastq.gz
+  - /proj/conlonlb/users/wasson/X-Trop-5_R2_001.fastq.gz
+  genome_build: XenTro10
+  metadata:
+    gene: xtrop-5
+    genome: XenTro10
+    user: Kerry
+- algorithm:
+    aligner: star
+    quality_format: standard
+    trim_reads: false
+  analysis: RNA-seq
+  description: xtrop-6
+  files:
+  - /proj/conlonlb/users/wasson/X-Trop-6_R1_001.fastq.gz
+  - /proj/conlonlb/users/wasson/X-Trop-6_R2_001.fastq.gz
+  genome_build: XenTro10
+  metadata:
+    gene: xtrop-6
+    genome: XenTro10
+    user: Kerry
+- algorithm:
+    aligner: star
+    quality_format: standard
+    trim_reads: false
+  analysis: RNA-seq
+  description: xtrop-7
+  files:
+  - /proj/conlonlb/users/wasson/X-Trop-7_R1_001.fastq.gz
+  - /proj/conlonlb/users/wasson/X-Trop-7_R2_001.fastq.gz
+  genome_build: XenTro10
+  metadata:
+    gene: xtrop-7
+    genome: XenTro10
+    user: Kerry
+- algorithm:
+    aligner: star
+    quality_format: standard
+    trim_reads: false
+  analysis: RNA-seq
+  description: xtrop-8
+  files:
+  - /proj/conlonlb/users/wasson/X-Trop-8_R1_001.fastq.gz
+  - /proj/conlonlb/users/wasson/X-Trop-8_R2_001.fastq.gz
+  genome_build: XenTro10
+  metadata:
+    gene: xtrop-8
+    genome: XenTro10
+    user: Kerry
+fc_name: xtrop_xen10_test_submission
+upload:
+  dir: ../final
