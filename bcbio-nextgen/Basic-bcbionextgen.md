@@ -91,5 +91,22 @@ Change into the config folder. You will see your original csv and submission tem
 less xtrop_xen10_test_submission.yaml
 ```
 
-You can see that bcbio has used the csv and the template we provided to make this file. But, sometimes it does a bad job with this if your fastq files are not ending like R1.fast.gz and R2.fastq.gz. You might have to manually edit this file so that R1 and R2 are paired (I had to do this with files that ended in R1_001.fastq.gz and R2_001.fastq.gz). View the fixed example [HERE.](https://github.com/drlaurenwasson/Compute_Clustering/blob/master/bcbio-nextgen/xtrop_xen10_test_submission.yaml)
+You can see that bcbio has used the csv and the template we provided to make this file. But, sometimes it does a bad job with this if your fastq files are not ending like R1.fast.gz and R2.fastq.gz. You might have to manually edit this file so that R1 and R2 are paired (I had to do this with files that ended in R1_001.fastq.gz and R2_001.fastq.gz). View the fixed example [HERE.](https://github.com/drlaurenwasson/Compute_Clustering/blob/master/bcbio-nextgen/xtrop_xen10_test_submission.yaml) This is what the first few lines look like, and this block of text repeats for each sample.
 
+```
+details:
+- algorithm:
+    aligner: star
+    quality_format: standard
+    trim_reads: false
+  analysis: RNA-seq
+  description: xtrop-1
+  files:
+  - /proj/conlonlb/users/wasson/X-Trop-1_R1_001.fastq.gz
+  - /proj/conlonlb/users/wasson/X-Trop-1_R2_001.fastq.gz
+  genome_build: XenTro10
+  metadata:
+    sex: male
+    genome: XenTro10
+    user: Kerry
+```
