@@ -1,0 +1,11 @@
+# Template for xenopus RNA-seq using Illumina prepared samples
+---
+details:
+  - analysis: RNA-seq
+    genome_build: XenTro10
+    algorithm:
+      aligner: star
+      quality_format: standard
+      trim_reads: False
+upload:
+  dir: ../final
