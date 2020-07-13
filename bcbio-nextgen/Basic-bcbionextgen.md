@@ -47,3 +47,25 @@ X-Trop-1_R2_001.fastq.gz,xtrop-1,male,XenTro10,Kerry
 The first line will always have samplename and description as its first two parameters, and then after that you can decide what parameters to add. Here, I added sex (the study was comparing male versus female), the genome I want to align to, and who I am doing the analysis for. Other things you can add includ genotype, cellline, mutation, gene, timepoint, drug dose. Whatever.
 
 For more information about making a textfile in the cluster, see my page [HERE.](https://github.com/drlaurenwasson/Compute_Clustering/blob/master/04-Making%20text%20files%20via%20command%20line.md)
+
+2. a template, with the extension .yaml. I have linked an example [HERE.](https://github.com/drlaurenwasson/Compute_Clustering/blob/master/bcbio-nextgen/xtrop_xen10_test_submission-template.yaml)
+
+```
+# Template for xenopus RNA-seq using Illumina prepared samples
+---
+details:
+  - analysis: RNA-seq
+    genome_build: XenTro10
+    algorithm:
+      aligner: star
+      quality_format: standard
+      trim_reads: False
+upload:
+  dir: ../final
+```
+
+I have installed genome_builds hg38, XenTro9, XenTro10, and mm10. I have installed STAR, BWA and hisat2 aligners. If you want more options, let me know and I can install them. 
+
+STAR is my preferred aligner for RNA_seq data. trim_reads is a parameter where you run Trimmomatic to trim the ends off of reads. I assume that the ends are trimmed when we receive samples from the HTSF, so here I have set it to FALSE. 
+
+
