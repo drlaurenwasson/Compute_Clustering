@@ -113,5 +113,27 @@ details:
 
 ## Step 5: Run bcbio-nextgen
 
-Change to the "work" directory. Here we will write a basic shell script to submit to the cluster. 
+Change to the "work" directory. Here we will write a basic shell script to submit to the cluster. For more information on how to submit jobs to the cluster using the SLURM schedule, see my page [HERE.](https://github.com/drlaurenwasson/Compute_Clustering/blob/master/03-SLURM.md) 
 
+Type:
+```
+vim submit_bcbio.sh
+```
+This opens up a text editor. Paste the following text, filling in your specific details. See the SLURM page above for information about the parameters
+```
+#!/bin/bash
+
+#SBATCH -p general
+#SBATCH --job-name=xentro10_test_bcbionextgen
+#SBATCH -c 6
+#SBATCH -t 48:00:00
+#SBATCH --mem=64G
+#SBATCH -e xentro10_test_bcbionextgen.err
+
+#Set the PATH (we probably already did this, but better safe than sorry)
+export PATH=/proj/conlonlb/bcbio/anaconda/bin:/proj/conlonlb/bcbio/tools/bin:$PATH
+
+bcbio_nextgen.py ../config/xtrop_xen10_test_submission.yaml -n 20
+```
+
+Here, we are running the bcbio_nextgen.py script using the YAML file that was just created. This should submit your job to the cluster. 
