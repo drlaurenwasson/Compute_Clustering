@@ -110,3 +110,8 @@ details:
     genome: XenTro10
     user: Kerry
 ```
+
+## Step 5: Run bcbio-nextgen
+
+Change to the "work" directory. Here we will write a basic shell script to submit to the cluster. 
+
