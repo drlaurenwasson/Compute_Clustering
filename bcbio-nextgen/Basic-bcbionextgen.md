@@ -1,3 +1,24 @@
 # Introduction to bcbio-nextgen
 Full documentation can be found here:
 https://bcbio-nextgen.readthedocs.io/en/latest/
+
+Bcbio-nextgen is a set of scripts used to run Next-generation sequencing pipelines. It is essentially a set of python scripts that chain all steps together so that you can just set up one experiment, submit it, and the program will do the rest for you.
+
+# Installation and getting started
+Full details about installation can be found in the link above. However, I have installed bcbio-nextgen in the Conlon Lab directory
+
+However, bcbio-nextgen is not installed on the Longleaf cluster as a module. Therefore, you do not load it using module load like other modules. Therefore, to access all of the scripts that bcbio has you must set your PATH to the right location.
+
+A PATH is an environment variable on Unix-like operating systems that specifies a set of directories where executable programs are located. In general, each executing process or user session has its own PATH setting. If you do not set your path to the right location and try to run bcbio-nextgen, the commands will fail because it will say that the scripts are not installed. 
+
+## Step 1: Log into the cluster
+```
+ssh onyen@longleaf.unc.edu
+```
+enter your password
+Change directories to where you want to run your script
+```
+cd /proj/conlonlb/users/YOURFOLDER
+```
+
+RNA-seq
