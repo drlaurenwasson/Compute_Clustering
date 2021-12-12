@@ -16,3 +16,16 @@ Under this header you should see
 4. Temporary scratch space ```/pine/scr/<firstinitial>/<lastinitial>/<onyen>```. This has up to 30TB of storage space, and should be where we do many of our computation. Some things to keep in mind. <br><br>
   a. <b>Scratch file deletion will be enforced with files older than 36 days being removed. Any file not used or modified in the last 36 days will be deleted. </b><br><br>
   b. Scratch space is a shared, temporary work space. Please note that scratch space is <b>not backed up</b> and is, therefore, not intended for permanent data storage. Use Mass Storage to store permanent data.
+
+## Jobs
+Under this header you see
+1. Active Jobs. This shows jobs actively running in the cluster
+2. Job composer.
+
+## Clusters
+1. Longleaf Cluster: Clicking on this will open your terminal.
+
+## Interactive Apps
+1. Opening this dropdown menu shows you all of the "apps" available on the cluster. Here you can open things like R Studio, which gives you all the compute power of the cluster but you can still use R Studio like on your desktop.
+
+
