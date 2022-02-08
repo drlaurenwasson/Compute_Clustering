@@ -29,5 +29,9 @@ Under this header you see
 1. Opening this dropdown menu shows you all of the "apps" available on the cluster. Here you can open things like R Studio, which gives you all the compute power of the cluster but you can still use R Studio like on your desktop.
 
 # Using the Cluster
-1. Navagate to the following folder: ```/proj/conlonlb/users/lauren/robbe_et_al/resubmission/```
-2. 
+1. on this page: https://ondemand.rc.unc.edu/pun/sys/dashboard locate the Files panel, click down to /proj. Navagate to  ```/proj/conlonlb/users/lauren/robbe_et_al/resubmission/```
+2. On the top of the page you should see <b>>_ Open in terminal </b> . Click that.
+3. You have landed on a login node. A login node is designed to be a landing place, but the node itself has very little RAM and very little memory. You cant run too many commands on here, so I immediately move onto a compute node. To do this type:
+ ``` srun -t 5:00:00 -p interact -N 1 -n 1 --mem=20G --pty /bin/bash ```
+ 
+ 
