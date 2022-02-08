@@ -44,6 +44,11 @@ Under this header you see
 4. Load your modules: If you dont know which modules are available type ```module spider <NAME>>```. It will tell you which versions of modules are already installed on Longleaf. Here we will install samtools, deeptools, and bedtools. <br> 
 ```module load samtools/1.14 deeptools/3.2.0 bedtools/2.29```
 
+## Determine Peak overlap using bedtools intersect
+Bedtools is an incredibly powerful tool to determine whether peaks overlap or not. Information for this command can be found here
+https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html
+<br> To overlap Gata4 peaks and NKX2-5 peaks
+```bedtools intersect -a Combined_Gata4_005_narrow_005_peaks.txt -b Combined_Nkx25_005_narrow_005_peaks.txt -wa > GATA4NKX_overlap.bed```
 
  
  
