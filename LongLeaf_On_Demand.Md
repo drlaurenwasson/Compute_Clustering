@@ -41,9 +41,9 @@ Under this header you see
  mem = memory allotment. I use 20G and then if I run out I ask for more. <br>
  pty = pseudo-terminal that allows you to run bash scripts <br>
  
-4. Load your modules:
+4. Load your modules: If you dont know which modules are available type ```module spider <NAME>>```. It will tell you which versions of modules are already installed on Longleaf. Here we will install samtools, deeptools, and bedtools. <br> 
 ```module load samtools/1.14 deeptools/3.2.0 bedtools/2.29```
-5. 
+
 
  
  
