@@ -28,4 +28,6 @@ Under this header you see
 ## Interactive Apps
 1. Opening this dropdown menu shows you all of the "apps" available on the cluster. Here you can open things like R Studio, which gives you all the compute power of the cluster but you can still use R Studio like on your desktop.
 
-
+# Using the Cluster
+1. Navagate to the following folder: ```/proj/conlonlb/users/lauren/robbe_et_al/resubmission/```
+2. 
