@@ -45,12 +45,14 @@ Under this header you see
 ```module load samtools/1.14 deeptools/3.2.0 bedtools/2.29```
 
 ## Determine Peak overlap using bedtools intersect
-Bedtools is an incredibly powerful tool to determine whether peaks overlap or not. Information for this command can be found here
+Bedtools is an incredibly powerful tool to determine whether peaks overlap or not. Information for this command can be found here <br>
 https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html
-<br> To overlap Gata4 peaks and NKX2-5 peaks
+<br><br> To overlap Gata4 peaks and Nkx2-5 peaks: <br>
 ```bedtools intersect -a Combined_Gata4_005_narrow_005_peaks.txt -b Combined_Nkx25_005_narrow_005_peaks.txt -wa > GATA4NKX_overlap.bed```
-
+<br><br> Now lets intersect that file with the TBX5 file to get GNT peaks <br>
+```bedtools intersect -a CHD4_GATANKX_overlap.bed -b Combined_Tbx5_005_narrow_005_peaks.txt -wa > GATANKXTBX_overlap.bed``` <br><br>
  
+
  
  
  
